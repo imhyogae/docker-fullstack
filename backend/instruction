@@ -1,0 +1,11 @@
+docker build -t {image_name} .
+docker images
+docker run -p 4000:4000 {image_name}
+
+docker-compose build
+docker-compose up -d mongo
+docker ps
+docker logs {container_name}
+docker-compose up -d app
+docker ps
+docker-compose stop
